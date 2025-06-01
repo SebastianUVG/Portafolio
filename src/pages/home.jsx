@@ -1,9 +1,9 @@
+import { ThemeToggle } from "../components/ThemeToggle"
+
 export const Home = () =>{
-    return <div>
-
-
-
+    return <div className= "min-h-screen bg-background text-foreground overflow-x-hidden">
         {/*Cambio de estilo de pagina */}
+        <ThemeToggle/>
 
         {/* Efectos del fondo*/ }
 

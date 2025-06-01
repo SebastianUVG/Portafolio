@@ -1,4 +1,4 @@
-@import "tailwindcss"
+@import 'tailwindcss';
 
 @theme {
   --color-border: hsl(var(--border));
@@ -98,7 +98,7 @@
   }
 
   html {
-    @apply scroll;
+    @apply scroll-smooth;
   }
 
   body {
@@ -133,6 +133,7 @@
   }
 }
 
+/*De aqui en adelante da error:*/
 @utility text-glow {
   @apply relative;
   text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
@@ -151,8 +152,7 @@
 
 @utility cosmic-button{
   @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium
-    transition-all duration-300 hover:shadow-[0 0 10px_rgba(167, 139, 250, 0.5)]
-    hover:scale-105 active:scale-95;
+    transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)] hover:scale-105 active:scale-95;
 }
 
 @utility star {
@@ -164,6 +164,8 @@
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
   box-shadow: 0 0 10px 2px rbga(255,255,255,0.3);
 }
+
+/*---------------------------------------------------------------------------------------*/
 
 #root {
   max-width: 100vw;
