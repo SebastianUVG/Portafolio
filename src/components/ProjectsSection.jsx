@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Key } from "lucide-react";
+import { ArrowRight, ExternalLink, Github, Key } from "lucide-react";
 
 const projects = [
      {
@@ -96,7 +96,7 @@ export const ProjectsSection = () => {
                               <div className="h-48 overflow-hidden">
                                    <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
                               </div>
-                              <div className="p-6 ">
+                              <div className="p-6">
                                    <div className="flex flex-wrap gao-2 mb-4">
                                         {project.tags.map((tag) =>(
                                              <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
@@ -128,6 +128,13 @@ export const ProjectsSection = () => {
                               </div>
                          </div>
                     ))}
+               </div>
+               <div className="text-center mt-12">
+                    <a href="https://github.com/SebastianUVG" 
+                    className="cosmic-button w-fit flex items-center mx-auto gap-2"
+                    target="__blank">
+                         Github <Github size= {16}/>
+                    </a>
 
                </div>
           </div>

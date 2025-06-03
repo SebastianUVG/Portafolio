@@ -7,7 +7,7 @@ export const HomeSection = () => {
             <div className="space-y-6">
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                     <span className="opacity-0 animate-fade-in">Hola, yo soy </span>
-                    <span className="text-primary opacity-0 animate-fade-in-delay-1">Sebastian </span>
+                    <span className="text-primary opacity-0 animate-fade-in-delay-1">Sebastian</span>
                     <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">Garcia</span>
                     
                 </h1>
