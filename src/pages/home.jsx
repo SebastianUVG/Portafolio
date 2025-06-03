@@ -1,7 +1,7 @@
 import { Navbar } from "../components/navBar"
 import { ThemeToggle } from "../components/ThemeToggle"
 import {StarBackground} from "@/components/StarBackground"
-import {HeroSection} from "@/components/HeroSection"
+import {HomeSection} from "@/components/HomeSection"
 import { AboutSection } from "@/components/AboutSection"
 import { SkillsSection } from "@/components/SkillsSection"
 import { ProjectsSection } from "../components/ProjectsSection"
@@ -17,7 +17,7 @@ export const Home = () =>{
         <Navbar/>
         {/*Contenido principal*/}
         <main>
-            <HeroSection/>
+            <HomeSection/>
             <AboutSection/>
             <SkillsSection/>
             <ProjectsSection/>

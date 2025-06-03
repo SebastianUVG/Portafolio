@@ -72,7 +72,7 @@ const projects = [
           description: "Realizacion de una Calculadora",
           image: "/projectsImage/calculadora.png",
           tags: ["React","CSS","HTML"],
-          Url: "#",
+          Url: "/projectsFiles/lab8/index.html",
           github: "https://github.com/SebastianUVG/Calculadora"
      }
 ]
