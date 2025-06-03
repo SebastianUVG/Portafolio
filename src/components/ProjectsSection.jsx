@@ -3,8 +3,73 @@ import { ExternalLink, Github, Key } from "lucide-react";
 const projects = [
      {
           id: 1 , 
+          title: "Lab 1: El internet antes de la web",
+          description: "Laboratorio para observar como funcionaba el internet antes",
+          image: "/projectsImage/lab1.png",
+          tags: ["CLI"],
+          Url: "/projectsFiles/lab1/Lab01.pdf",
+          github: "#"
+     },
+     {
+          id: 2 , 
+          title: "Lab 2: Administración de servidores remotos",
+          description: "Practica para conectarse a serviores de forma remota",
+          image: "/projectsImage/lab2.png",
+          tags: ["SSH"],
+          Url: "/projectsFiles/lab2/Lab02.txt",
+          github: "#"
+     },
+     {
+          id: 3 , 
+          title: "Lab 3: HTML only",
+          description: "Practica para realizar paginas web simples",
+          image: "/projectsImage/lab3.png",
+          tags: ["HTML"],
+          Url: "/projectsFiles/lab3/index.html",
+          github: "https://github.com/SebastianUVG/lab3"
+     },
+     {
+          id: 4 , 
+          title: "Lab 4: CSS only",
+          description: "Practica de CSS",
+          image: "/projectsImage/lab4.png",
+          tags: ["CSS"],
+          Url: "/projectsFiles/lab4/dibujo2.html",
+          github: "#"
+     },
+      {
+          id: 5 , 
+          title: "Lab 5: JS only",
+          description: "Practica de realizacion de un chat en vivo mediante solo el uso de JS",
+          image: "/projectsImage/lab5.png",
+          tags: ["JS"],
+          Url: "/projectsFiles/lab5/index.html",
+          github: "#"
+     },
+     {
+          id: 6 , 
+          title: "Lab 6: Backend only",
+          description: "Desarrollo del backend de una pagina de liga de futbol",
+          image: "/projectsImage/lab6.png",
+          tags: ["Docker","Apis","Go"],
+          Url: "#",
+          github: "https://github.com/SebastianUVG/Lab-6-Backend-only---Parte-1"
+     },
+    
+     {
+          id: 7 , 
+          title: "Lab 7: React",
+          description: "Practica de react con un juego de memoria",
+          image: "/projectsImage/lab7.png",
+          tags: ["HTML","CSS","REACT","JS"],
+          Url: "/projectsFiles/lab7/index.html",
+          github: "#"
+     },
+     
+     {
+          id: 8 , 
           title: "Projecto Final",
-          description: "Proyecto final, Calculadora",
+          description: "Realizacion de una Calculadora",
           image: "/projectsImage/calculadora.png",
           tags: ["React","CSS","HTML"],
           Url: "#",
@@ -44,20 +109,22 @@ export const ProjectsSection = () => {
                                    <h3 className="text-xl font-semibold mb-1">
                                         {project.title}
                                    </h3>
-                                   <p className="text-muted-foregorund text-sm mb-4">
+                                   <p className="text-muted-foreground text-sm mb-4">
                                         {project.description}
                                    </p>
-                                   <div className="flex justify-between items-center">
-                                        <div className="flex space-x-3">
-                                              <a href={project.Url} target="__Blank" className="text-foregorund/80 hover:text-primary transition-colors duration-300">
-                                                  <ExternalLink size={20}/>
-                                             </a>
-                                             <a href={project.github} target="__Blank" className="text-foregorund/80 hover:text-primary transition-colors duration-300">
-                                                  <Github size={20}/>
-                                             </a>
-                                        </div>
-                                        
+                                   <div className="flex space-x-3">
+                                        {project.Url && project.Url !== "#" && (
+                                        <a href={project.Url} target="__blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                                             <ExternalLink size={20} />
+                                        </a>
+                                        )}
+                                        {project.github && project.github !== "#" && (
+                                        <a href={project.github} target="__blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                                             <Github size={20} />
+                                        </a>
+                                        )}
                                    </div>
+
                               </div>
                          </div>
                     ))}
