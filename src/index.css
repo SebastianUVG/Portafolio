@@ -258,6 +258,106 @@
   }
 }
 
+@utility led-glow-hover {
+  @apply relative overflow-visible transition-transform duration-300;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: inherit;
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    background-size: 400%;
+    filter: blur(6px);
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    animation: glow-loop 20s linear infinite;
+    pointer-events: none;
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@keyframes glow-loop {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 400% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+
+
+@utility card-glow-hover {
+  @apply relative overflow-hidden rounded-xl transition-transform duration-300;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: conic-gradient(
+      from 0deg,
+      hsl(270, 80%, 70%),
+      hsl(290, 85%, 75%),
+      hsl(310, 90%, 65%),
+      hsl(250, 85%, 70%),
+      hsl(270, 80%, 70%)
+    );
+    background-size: 400% 400%;
+    animation: rotateGlow 6s linear infinite;
+    filter: blur(12px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 0;
+    border-radius: inherit;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@keyframes rotateGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 /*---------------------------------------------------------------------------------------*/
 
 #root {
