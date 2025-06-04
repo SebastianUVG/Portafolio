@@ -74,6 +74,15 @@ const projects = [
           tags: ["React","CSS","HTML"],
           Url: "/projectsFiles/lab8/index.html",
           github: "https://github.com/SebastianUVG/Calculadora"
+     },
+     {
+          id: 9 , 
+          title: "Portafolio",
+          description: "Realizacion del portafolio",
+          image: "/projectsImage/lab9.png",
+          tags: ["React","CSS","HTML","tailwindcss","JS"],
+          Url: "#",
+          github: "https://github.com/SebastianUVG/Portafolio"
      }
 ]
 

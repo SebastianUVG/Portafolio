@@ -12,11 +12,11 @@ export const AboutSection = () => {
                     {/*Acerca de mi informacion*/}
                     <h3 className="text-2xl font-semibold">Web Developer apasionado por indagar mas en este mundo de creacion de paginas y servidores</h3>
                     <p className="text-muted-foreground">
-                        Estudiante de ingenieria de sistemas en la Universidad del valle de Guatemala, emprendiendo el viaje para ser developer de paginas web
+                        Me gusta mucho hacer deporte, soy amigable y si tengo un trabajo que hacer, me esmero para elaborar un excelente trabajo.
                     </p>
 
                     <p className="text-muted-foreground">
-                        Estudiante de ingenieria de sistemas en la Universidad del valle de Guatemala, emprendiendo el viaje para ser developer de paginas web
+                        Tengo experiencia laboral en creaciones de paginas web para instituciones gubernamentales.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -40,7 +40,7 @@ export const AboutSection = () => {
                             </div>
                             <div className="text-left">
                                 <h1 className="font-semibold text-lg">Desarrollador Web</h1>
-                                <p className="text-muted-foreground">Creador de paginas web y servidores</p>
+                                <p className="text-muted-foreground">Frontend y Backend</p>
                             </div>
                         </div>
                     </div>
@@ -52,8 +52,8 @@ export const AboutSection = () => {
                                 <User className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
-                                <h1 className="font-semibold text-lg">UI/UX Designer</h1>
-                                <p className="text-muted-foreground">Creador de paginas web y servidores</p>
+                                <h1 className="font-semibold text-lg">Diseñador UI/UX</h1>
+                                <p className="text-muted-foreground">Especializado en css y diseño de paginas</p>
                             </div>
                         </div>
 
@@ -65,7 +65,7 @@ export const AboutSection = () => {
                             </div>
                             <div className="text-left">
                                 <h1 className="font-semibold text-lg">Projecto Manager</h1>
-                                <p className="text-muted-foreground">Creador de paginas web y servidores</p>
+                                <p className="text-muted-foreground">En busca de realización de nuevos projectos</p>
                             </div>
                         </div>
                     </div>

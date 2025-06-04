@@ -7,13 +7,13 @@ export const ContactSection = () => {
         <section id="contact" className="py-24 px-4 relative bg-secondary/30">
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-                    Get in 
-                    <span className="text-primary"> Touch</span>
+                    Contá
+                    <span className="text-primary">ctame</span>
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
                     Tienes algun proyecto en mente o quieres colaborar?
-                    No te preocupes y podemos hablar. Siempre estoy dispuesto a nuevos proyectos y oportunidades.
+                    No te preocupes, podemos hablar. Siempre estoy dispuesto a nuevos proyectos y oportunidades.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -26,8 +26,8 @@ export const ContactSection = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-medium">Email</h4>
-                                    <a href="mailto:example@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
-                                        example@gmail.com
+                                    <a href="mailto:gar22291@uvg.edu.gt" className="text-muted-foreground hover:text-primary transition-colors">
+                                        gar22291@uvg.edu.gt
                                     </a>
                                 </div>
                             </div>
