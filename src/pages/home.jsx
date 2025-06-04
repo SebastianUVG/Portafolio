@@ -1,5 +1,5 @@
-import { Navbar } from "../components/navBar"
-import { ThemeToggle } from "../components/ThemeToggle"
+import { Navbar } from "@/components/navBar"
+import { ThemeToggle } from "@/components/ThemeToggle"
 import {StarBackground} from "@/components/StarBackground"
 import {HomeSection} from "@/components/HomeSection"
 import { AboutSection } from "@/components/AboutSection"
