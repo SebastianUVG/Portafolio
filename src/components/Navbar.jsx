@@ -39,7 +39,7 @@ export const Navbar = () => {
         >
           <span className="relative z-10">
             <span className="text-glow text-foreground">Sebastian</span>{" "}
-            <span style={{ color: "hsl(250, 65%, 65%)" }}>Portafolio</span>
+            <span className="text-primary">Portafolio</span>
           </span>
         </a>
 
