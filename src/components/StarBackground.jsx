@@ -1,75 +1,65 @@
-import { useState, useEffect } from "react"
-
-
-// id de la estrella, tamaño, posicion x y Y , duracion de la animacion y opacidad
+import { useState, useEffect } from "react";
 
 export const StarBackground = () => {
-    const [stars,setStars] = useState([]);
-    const [meteors,setMeteors] = useState([]);
+  const [stars, setStars] = useState([]);
+  const [meteors, setMeteors] = useState([]);
 
-    useEffect(() => {
-        generatestars();
-        genereteMeteors();
+  useEffect(() => {
+    generatestars();
+    genereteMeteors();
+    //generateAuroras();
 
-        const handleResize = () => {
-            generatestars();
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-
-    },[]);
-    const generatestars = () =>{
-        const numberOfStars = Math.floor(
-            window.innerWidth * window.innerHeight / 10000
-        );
-        
-        const newStars= []
-
-        for (let i = 0; i < numberOfStars; i++)
-            {
-                newStars.push({
-                    id:i,
-                    size: Math.random()*3 +1,
-                    x: Math.random() * 100,
-                    y: Math.random() * 100,
-                    opacity : Math.random() * 0.5 + 0.5,
-                    duration : Math.random() * 4 +2,
-                })
-            }
-
-            setStars(newStars);
+    const handleResize = () => {
+      generatestars();
     };
 
+    window.addEventListener("resize", handleResize);
+    return () => {window.removeEventListener("resize", handleResize)};
+  }, []);
 
-    // id de la estrella, tamaño, posicion x y Y , delay , tiempo
-    const genereteMeteors = () =>{
-        const numberOfMeteors = 4;
-        
-        const newMeteors = []
+  const generatestars = () => {
+    const numberOfStars = Math.floor(
+      (window.innerWidth * window.innerHeight) / 10000
+    );
+    const newStars = [];
 
-        for (let i = 0; i < numberOfMeteors; i++)
-            {
-                newMeteors.push({
-                    id:i,
-                    size: Math.random()*2 +1,
-                    x: Math.random() * 100,
-                    y: Math.random() * 20,
-                    delay : Math.random() * 15,
-                    Aduration : Math.random() * 3 +3,
-                })
-            }
+    for (let i = 0; i < numberOfStars; i++) {
+      newStars.push({
+        id: i,
+        size: Math.random() * 3 + 1,
+        x: Math.random() * 100,
+        y: Math.random() * 100,
+        opacity: Math.random() * 0.5 + 0.5,
+        duration: Math.random() * 4 + 2,
+      });
+    }
 
-            setMeteors(newMeteors);
-    };
+    setStars(newStars);
+  };
+
+  const genereteMeteors = () => {
+    const numberOfMeteors = 4;
+    const newMeteors = [];
+
+    for (let i = 0; i < numberOfMeteors; i++) {
+      newMeteors.push({
+        id: i,
+        size: Math.random() * 2 + 1,
+        x: Math.random() * 100,
+        y: Math.random() * 20,
+        delay: Math.random() * 15,
+        Aduration: Math.random() * 3 + 3,
+      });
+    }
+
+    setMeteors(newMeteors);
+  };
 
 
-
-    return <div className="fixed inset-0 overflow-hidden pointer-events-non z-0">
-        {stars.map((stars)=>(
+  return (
+    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div className="aurora" />
+      {stars.map((stars)=>(
             <div key={stars.id} className="star animate-pulse*subtle" 
             style={{
                 width:stars.size+"px",
@@ -79,9 +69,9 @@ export const StarBackground = () => {
                 opacity:stars.opacity,
                 duration: stars.duration+"s",
             }}/>
-        ))}
+      ))}
 
-        {meteors.map((meteor)=>(
+      {meteors.map((meteor)=>(
             <div key={meteor.id} className="meteor animate-meteor" 
             style={{
                 width:meteor.size * 50+"px",
@@ -91,7 +81,9 @@ export const StarBackground = () => {
                 animation:meteor.delay,
                 duration: meteor.Aduration+"s",
             }}/>
-        ))}
-        
+      ))}
+
+      
     </div>
-}
+  );
+};

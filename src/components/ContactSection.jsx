@@ -8,7 +8,7 @@ export const ContactSection = () => {
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
                     Get in 
-                    <span className="text-primary">Touch</span>
+                    <span className="text-primary"> Touch</span>
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -60,16 +60,16 @@ export const ContactSection = () => {
                         <div className="pt-8">
                             <h4 className="font-medium mb-4">Redes Sociales</h4>
                             <div className="flex space-x-4 justify-center">
-                                <a href="#" target="_blank">
+                                <a href="https://gt.linkedin.com" target="_blank">
                                     <Linkedin />
                                 </a>
-                                <a href="#" target="_blank">
+                                <a href="https://www.instagram.com" target="_blank">
                                     <Instagram />
                                 </a>
-                                <a href="#" target="_blank">
+                                <a href="https://www.facebook.com" target="_blank">
                                     <Facebook />
                                 </a>
-                                <a href="#" target="_blank">
+                                <a href="https://x.com" target="_blank">
                                     <Twitter />
                                 </a>
                             </div>

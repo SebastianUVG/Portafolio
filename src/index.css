@@ -166,6 +166,48 @@
   box-shadow: 0 0 10px 5px rbga(255,255,255,0.3);
 }
 
+.aurora {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 30%, rgba(144, 224, 239, 0.4), transparent 40%),
+              radial-gradient(circle at 70% 60%, rgba(189, 147, 249, 0.4), transparent 45%),
+              radial-gradient(circle at 50% 50%, rgba(120, 255, 214, 0.3), transparent 50%);
+  animation: moveAurora 25s ease-in-out infinite, auroraColors 15s ease-in-out infinite alternate;
+  transform: translate(-25%, -25%);
+  filter: blur(120px);
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.8;
+  filter: blur(150px);
+}
+
+@keyframes moveAurora {
+  0% {
+    transform: translate(-25%, -25%) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate(-20%, -30%) rotate(5deg) scale(1.1);
+  }
+  100% {
+    transform: translate(-25%, -25%) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes auroraColors {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+
+
 /*---------------------------------------------------------------------------------------*/
 
 #root {
