@@ -12,13 +12,13 @@ export const ContactSection = () => {
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    Tienes algun proyecto en mente o quieres colaborar?
+                    ¿Tienes algún proyecto en mente o quieres colaborar?
                     No te preocupes, podemos hablar. Siempre estoy dispuesto a nuevos proyectos y oportunidades.
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="grid justify-center gap-12">
                     <div className="space-y-8">
-                        <h3 className="text-2xl font-semibold mb-6">Informacion de contacto</h3>
+                        <h3 className="text-2xl font-semibold mb-6">Información de contacto</h3>
                         <div className="space-y-6 justify-center">
                             <div className="flex items-start space-x-4">
                                 <div className="p-3 rounded-full bg-primary/10">
@@ -37,7 +37,7 @@ export const ContactSection = () => {
                                     <Phone className="h-6 w-6 text-primary"/>
                                 </div>
                                 <div>
-                                    <h4 className="font-medium">Telefono</h4>
+                                    <h4 className="font-medium">Teléfono</h4>
                                     <a href="tel:+55550505050" className="text-muted-foreground hover:text-primary transition-colors">
                                         +555 50505050
                                     </a>
@@ -56,7 +56,7 @@ export const ContactSection = () => {
                                 </div>
                             </div>
                         </div>
-
+                        
                         <div className="pt-8">
                             <h4 className="font-medium mb-4">Redes Sociales</h4>
                             <div className="flex space-x-4 justify-center">
@@ -75,9 +75,9 @@ export const ContactSection = () => {
                             </div>
                         </div>
                     </div>
-
+                    
                     {/* Columna derecha: Formulario de mensaje */}
-                    <div className="bg-card p-8 rounded-lg shadow-xs">
+                    {/* <div className="bg-card p-8 rounded-lg shadow-xs">
                         <h3 className="text-2xl font-semibold mb-6">Enviame un mensaje</h3>
                         <form className="space-y-6" action="">
                             <div>
@@ -120,7 +120,8 @@ export const ContactSection = () => {
                                 <Send size={16}/>
                             </button>
                         </form>
-                    </div>
+                    </div> */}
+
                 </div>
             </div>
         </section>

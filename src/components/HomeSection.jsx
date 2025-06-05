@@ -7,12 +7,12 @@ export const HomeSection = () => {
             <div className="space-y-6">
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                     <span className="opacity-0 animate-fade-in">Hola, yo soy </span>
-                    <span className="text-primary opacity-0 animate-fade-in-delay-1">Sebastian</span>
-                    <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">Garcia</span>
+                    <span className="text-primary opacity-0 animate-fade-in-delay-1">Sebastián</span>
+                    <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">García</span>
                     
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    Estudiante de ingenieria de sistemas en la Universidad del valle de Guatemala, emprendiendo el viaje para ser developer de paginas web
+                    Soy estudiante de Ingeniería en Sistemas en la Universidad del Valle de Guatemala, actualmente emprendiendo el emocionante viaje de convertirme en desarrollador web, combinando creatividad y tecnología para construir soluciones digitales impactantes.
                     </p>
                 <div className="opacity-0 animate-fade-in-delay-4">
                     <a href="#projects" className="cosmic-button">Mira mis trabajos</a>

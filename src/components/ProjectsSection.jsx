@@ -4,7 +4,7 @@ const projects = [
      {
           id: 1 , 
           title: "Lab 1: El internet antes de la web",
-          description: "Laboratorio para observar como funcionaba el internet antes",
+          description: "Laboratorio para observar cómo funcionaba el internet antes de la web.",
           image: "/projectsImage/lab1.png",
           tags: ["CLI"],
           Url: "/projectsFiles/lab1/Lab01.pdf",
@@ -13,7 +13,7 @@ const projects = [
      {
           id: 2 , 
           title: "Lab 2: Administración de servidores remotos",
-          description: "Practica para conectarse a serviores de forma remota",
+          description: "Práctica para conectarse a servidores de forma remota.",
           image: "/projectsImage/lab2.png",
           tags: ["SSH"],
           Url: "/projectsFiles/lab2/Lab02.txt",
@@ -22,7 +22,7 @@ const projects = [
      {
           id: 3 , 
           title: "Lab 3: HTML only",
-          description: "Practica para realizar paginas web simples",
+          description: "Práctica para realizar páginas web simples.",
           image: "/projectsImage/lab3.png",
           tags: ["HTML"],
           Url: "/projectsFiles/lab3/index.html",
@@ -31,16 +31,16 @@ const projects = [
      {
           id: 4 , 
           title: "Lab 4: CSS only",
-          description: "Practica de CSS",
+          description: "Práctica de uso exclusivo de CSS.",
           image: "/projectsImage/lab4.png",
           tags: ["CSS"],
           Url: "/projectsFiles/lab4/dibujo2.html",
           github: "#"
      },
-      {
+     {
           id: 5 , 
           title: "Lab 5: JS only",
-          description: "Practica de realizacion de un chat en vivo mediante solo el uso de JS",
+          description: "Práctica de realización de un chat en vivo utilizando solo JavaScript.",
           image: "/projectsImage/lab5.png",
           tags: ["JS"],
           Url: "/projectsFiles/lab5/index.html",
@@ -49,42 +49,41 @@ const projects = [
      {
           id: 6 , 
           title: "Lab 6: Backend only",
-          description: "Desarrollo del backend de una pagina de liga de futbol",
+          description: "Desarrollo del backend de una página de liga de fútbol.",
           image: "/projectsImage/lab6.png",
-          tags: ["Docker","Apis","Go"],
+          tags: ["Docker", "APIs", "Go"],
           Url: "#",
           github: "https://github.com/SebastianUVG/Lab-6-Backend-only---Parte-1"
      },
-    
      {
           id: 7 , 
           title: "Lab 7: React",
-          description: "Practica de react con un juego de memoria",
+          description: "Práctica de React con un juego de memoria.",
           image: "/projectsImage/lab7.png",
-          tags: ["HTML","CSS","REACT","JS"],
+          tags: ["HTML", "CSS", "React", "JS"],
           Url: "/projectsFiles/lab7/index.html",
           github: "#"
      },
-     
      {
           id: 8 , 
-          title: "Projecto Final",
-          description: "Realizacion de una Calculadora",
+          title: "Proyecto Final",
+          description: "Realización de una calculadora.",
           image: "/projectsImage/calculadora.png",
-          tags: ["React","CSS","HTML"],
+          tags: ["React", "CSS", "HTML"],
           Url: "/projectsFiles/lab8/index.html",
           github: "https://github.com/SebastianUVG/Calculadora"
      },
      {
           id: 9 , 
           title: "Portafolio",
-          description: "Realizacion del portafolio",
+          description: "Realización del portafolio personal.",
           image: "/projectsImage/lab9.png",
-          tags: ["React","CSS","HTML","tailwindcss","JS"],
+          tags: ["React", "CSS", "HTML", "Tailwind CSS", "JS","Vite"],
           Url: "#",
           github: "https://github.com/SebastianUVG/Portafolio"
      }
-]
+];
+
 
 
 
@@ -96,12 +95,12 @@ export const ProjectsSection = () => {
                     <span className="text-primary"> Projects</span>
                </h2>
                <p className="text-center text-muted-foreground= mb-12 max-w-2xl mx-auto">
-                    Projectos realizados durante el curso de Tecnologias Web
+                    Proyectos realizados durante el curso de Tecnologías Web
                </p>
 
                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                     {projects.map((project) => (
-                    <div key={project.id} className="group bg-card  led-glow-hover rounded-lg overflow-hidden shadow-xs card-hover">
+                    <div key={project.id} className="group bg-card led-glow-hover rounded-lg overflow-hidden shadow-xs card-hover">
                               <div className="h-48 overflow-hidden">
                                    <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
                               </div>

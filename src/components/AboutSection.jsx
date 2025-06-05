@@ -4,7 +4,7 @@ export const AboutSection = () => {
     return <section id="about" className="py-24 px-4 relative">
         <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                A cerca <span className="text-primary"> de mi</span>
+                A cerca <span className="text-primary"> de mí</span>
             </h2>
 
             
@@ -19,7 +19,7 @@ export const AboutSection = () => {
                             </div>
                             <div className="text-left">
                                 <h1 className="font-semibold text-lg">Desarrollador Web</h1>
-                                <p className="text-muted-foreground">Frontend y Backend</p>
+                                <p className="text-muted-foreground">Especializado en CSS y diseño de páginas web, con experiencia tanto en el frontend como en el backend.</p>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@ export const AboutSection = () => {
                             </div>
                             <div className="text-left">
                                 <h1 className="font-semibold text-lg">Diseñador UI/UX</h1>
-                                <p className="text-muted-foreground">Especializado en css y diseño de paginas</p>
+                                <p className="text-muted-foreground">Apasionado por el desarrollo de interfaces atractivas y funcionales.</p>
                             </div>
                         </div>
 
@@ -43,7 +43,9 @@ export const AboutSection = () => {
                             </div>
                             <div className="text-left">
                                 <h1 className="font-semibold text-lg">Projecto Manager</h1>
-                                <p className="text-muted-foreground">En busca de realización de nuevos projectos</p>
+                                <p className="text-muted-foreground">Coordinando equipos y asegurando que cada proyecto cumpla con sus objetivos.
+                                    Siempre estoy en busca de nuevos proyectos que representen un reto y una oportunidad de crecimiento.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -52,18 +54,18 @@ export const AboutSection = () => {
 
                 <div className="space-y-6">
                     {/*Acerca de mi informacion*/}
-                    <h3 className="text-2xl font-semibold">Web Developer apasionado por indagar mas en este mundo de creacion de paginas y servidores</h3>
+                    <h3 className="text-2xl font-semibold">Desarrollador Web apasionado por explorar el mundo de la creación de páginas y servidores.</h3>
                     <p className="text-muted-foreground">
-                        Me gusta mucho hacer deporte, soy amigable y si tengo un trabajo que hacer, me esmero para elaborar un excelente trabajo.
+                        Me encanta hacer deporte, soy una persona amigable y, cuando tengo un trabajo que realizar, me esfuerzo al máximo para entregar resultados de alta calidad.
                     </p>
 
                     <p className="text-muted-foreground">
-                        Tengo experiencia laboral en creaciones de paginas web para instituciones gubernamentales.
+                        Cuento con experiencia laboral en el desarrollo de sitios web para instituciones gubernamentales.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                         <a href="#contact" className="cosmic-button">
-                            Contactame
+                            ¡Contáctame!
                         </a>
                         {/*No tengo CV*/}
                         <a href="#contact" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
